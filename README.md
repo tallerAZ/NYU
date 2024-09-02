@@ -1,2 +1,2 @@
-# NYU
-proyectos de la maestría
+# LowRes
+NYU projects
