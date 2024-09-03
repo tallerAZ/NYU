@@ -23,7 +23,7 @@ let word = "chaos"; // Inicializamos con "chaos"
 let showDots = true; // Inicializamos los puntos visibles
 
 function setup() {
-  createCanvas(windowWidth, windowHeight-100, WEBGL);
+  createCanvas(windowWidth, windowHeight-300, WEBGL);
   // inputs = serialConnect();
 
   buffer = createGraphics(512, 512);
