@@ -97,7 +97,8 @@ function displayStarChart() {
     if (starChartUrl) {
         const starChartImage = document.getElementById("star-chart");
         starChartImage.src = starChartUrl;
-        starChartImage.style.display = "block"; // Show the image
+        // Initially hide the image (will be displayed later based on scroll)
+        starChartImage.style.visibility = "hidden";
     }
 }
 
@@ -146,11 +147,11 @@ window.onscroll = function() {
             geoInfo.style.display = 'block';
         }
         // Display the star chart image in the black segment
-        displayStarChart();
+        document.getElementById("star-chart").style.visibility = "visible";
     } else {
         // Hide the geolocation info and star chart when not in the black segment
         document.getElementById('geo-info').style.display = 'none';
-        document.getElementById("star-chart").style.display = "none";
+        document.getElementById("star-chart").style.visibility = "hidden";
     }
 };
 
@@ -178,7 +179,8 @@ document.addEventListener("DOMContentLoaded", () => {
     starChartImage.style.bottom = "50px";
     starChartImage.style.left = "50%";
     starChartImage.style.transform = "translateX(-50%)";
-    starChartImage.style.display = "none"; // Initially hidden
+    starChartImage.style.display = "block"; // Image should be initially set
+    starChartImage.style.visibility = "hidden"; // Hide it initially
     starChartImage.style.maxWidth = "400px"; // Set max width for image
     starChartImage.style.maxHeight = "400px"; // Set max height for image
     document.body.appendChild(starChartImage);
