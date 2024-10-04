@@ -1,17 +1,22 @@
 // Define the color transitions in an array
 const colors = [
-  { r: 101, g: 55, b: 15 }, { r: 0, g: 128, b: 0 }, { r: 128, g: 128, b: 128 }, 
-  { r: 135, g: 206, b: 235 }, { r: 255, g: 255, b: 255 }, { r: 135, g: 206, b: 250 }, 
-  { r: 0, g: 0, b: 255 }, { r: 0, g: 0, b: 139 }, { r: 0, g: 0, b: 0 }
+  { r: 101, g: 55, b: 15 },   // Dark Brown
+  { r: 0, g: 128, b: 0 },     // Green
+  { r: 128, g: 128, b: 128 }, // Gray
+  { r: 135, g: 206, b: 235 }, // Light Blue
+  { r: 255, g: 255, b: 255 }, // White
+  { r: 135, g: 206, b: 250 }, // Light Blue (close to white)
+  { r: 0, g: 0, b: 255 },     // Blue
+  { r: 0, g: 0, b: 139 },     // Dark Blue
+  { r: 0, g: 0, b: 0 }        // Black
 ];
 
 let geolocationData = {}, starChartUrl = "";
 
 // Fetch geolocation data from the first API
 const fetchGeolocationData = async () => {
-  const apiUrl = `https://api.ipgeolocation.io/ipgeo?apiKey=bd5c877df0974c64ba4a6e0d47eb26a2`;
   try {
-    const response = await fetch(apiUrl);
+    const response = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=bd5c877df0974c64ba4a6e0d47eb26a2`);
     if (response.ok) {
       geolocationData = await response.json();
       await fetchStarChart(geolocationData.latitude, geolocationData.longitude);
@@ -55,7 +60,11 @@ const fadeOutAndShowP5 = () => {
   const starChartImage = document.getElementById("star-chart");
   let opacity = 1;
   const fadeOut = setInterval(() => {
-    if (opacity <= 0) clearInterval(fadeOut), starChartImage.style.display = "none", document.getElementById("p5-container").style.display = "block";
+    if (opacity <= 0) {
+      clearInterval(fadeOut);
+      starChartImage.style.display = "none";
+      document.getElementById("p5-container").style.display = "block";
+    }
     starChartImage.style.opacity = opacity;
     opacity -= 0.05;
   }, 100);
@@ -65,7 +74,7 @@ const fadeOutAndShowP5 = () => {
 window.onscroll = () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-  const scrollPercentage = 1 - scrollTop / maxScroll;
+  const scrollPercentage = (scrollTop / maxScroll);
 
   const colorIndex = Math.floor(scrollPercentage * (colors.length - 1));
   const nextColorIndex = Math.min(colorIndex + 1, colors.length - 1);
