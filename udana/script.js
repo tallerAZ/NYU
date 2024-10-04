@@ -74,7 +74,13 @@ const fadeOutAndShowP5 = () => {
 window.onscroll = () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+  if (maxScroll === 0) return; // Avoid division by zero errors
+
   const scrollPercentage = (scrollTop / maxScroll);
+
+  // Log scroll information for debugging
+  console.log(`Scroll Top: ${scrollTop}, Max Scroll: ${maxScroll}, Scroll Percentage: ${scrollPercentage}`);
 
   const colorIndex = Math.floor(scrollPercentage * (colors.length - 1));
   const nextColorIndex = Math.min(colorIndex + 1, colors.length - 1);
