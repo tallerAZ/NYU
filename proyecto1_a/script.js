@@ -106,6 +106,7 @@ fetchGeolocationData();
 
 // Scroll to bottom when the page loads
 window.onload = function() {
+    // Start at the bottom of the page
     window.scrollTo(0, document.body.scrollHeight);
 };
 
@@ -123,7 +124,7 @@ window.onscroll = function() {
     let startColor = colors[colorIndex];
     let endColor = colors[nextColorIndex];
 
-    // Calculate local scroll percentage between the two colors
+    // Calculate local percentage between two colors
     let localPercentage = (scrollPercentage * (colors.length - 1)) % 1;
 
     // Interpolate between the two colors
