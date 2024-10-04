@@ -1,193 +1,106 @@
 // Define the color transitions in an array
 const colors = [
-  { r: 101, g: 55, b: 15 },   // Dark Brown (adjusted to be darker)
-  { r: 0, g: 128, b: 0 },     // Green
-  { r: 128, g: 128, b: 128 }, // Gray
-  { r: 135, g: 206, b: 235 }, // Light Blue (Sky Blue)
-  { r: 255, g: 255, b: 255 }, // White
-  { r: 135, g: 206, b: 250 }, // Light Blue (close to white, avoids purple)
-  { r: 0, g: 0, b: 255 },     // Blue
-  { r: 0, g: 0, b: 139 },     // Dark Blue
-  { r: 0, g: 0, b: 0 }        // Black
+  { r: 101, g: 55, b: 15 }, { r: 0, g: 128, b: 0 }, { r: 128, g: 128, b: 128 }, 
+  { r: 135, g: 206, b: 235 }, { r: 255, g: 255, b: 255 }, { r: 135, g: 206, b: 250 }, 
+  { r: 0, g: 0, b: 255 }, { r: 0, g: 0, b: 139 }, { r: 0, g: 0, b: 0 }
 ];
 
-// Variable to store fetched geolocation data
-let geolocationData = {};
-let starChartUrl = ""; // Variable para almacenar la URL del Star Chart
+let geolocationData = {}, starChartUrl = "";
 
-// Función para obtener datos de geolocalización de la primera API
-async function fetchGeolocationData() {
-  const apiKey = 'bd5c877df0974c64ba4a6e0d47eb26a2';
-  const apiUrl = `https://api.ipgeolocation.io/ipgeo?apiKey=${apiKey}`;
-
+// Fetch geolocation data from the first API
+const fetchGeolocationData = async () => {
+  const apiUrl = `https://api.ipgeolocation.io/ipgeo?apiKey=bd5c877df0974c64ba4a6e0d47eb26a2`;
   try {
     const response = await fetch(apiUrl);
-    if (!response.ok) {
-      throw new Error(`Error: ${response.status}`);
+    if (response.ok) {
+      geolocationData = await response.json();
+      await fetchStarChart(geolocationData.latitude, geolocationData.longitude);
     }
-    const data = await response.json();
-    console.log("Geolocation Data:", data);
-
-    // Almacenar datos de geolocalización
-    geolocationData = data;
-
-    // Llamar a la función para obtener la imagen del Star Chart
-    await fetchStarChart(data.latitude, data.longitude);
   } catch (error) {
-    console.error("Failed to fetch geolocation data", error);
+    console.error("Geolocation Error:", error);
   }
-}
+};
 
-// Función para obtener datos de la carta estelar de la segunda API usando latitud y longitud
-async function fetchStarChart(latitude, longitude) {
-  const url = "https://api.astronomyapi.com/api/v2/studio/star-chart";
-  const apiKey = "3230dc54-3d55-4cca-b89a-977af275a135";
-  const applicationSecret = "9ca57b04eb6b07e4bba637d0848560a612356930fa3f7f465800ab9208e960c1999aa16c5fc8de08c75b1a4ca1497dfbfa94bb7bb640bc9de6625d816d6f2a7c70693829b2077af8ad70e301f8fbe0bc0e1f613f95ed528c474d1f77f0986a1eb8122efa8debd2f40b94a22dbe61e3b1";
-  const authHeader = `Basic ${btoa(`${apiKey}:${applicationSecret}`)}`;
-
-  const data = JSON.stringify({
-    style: "default",
-    observer: {
-      latitude: parseFloat(latitude),
-      longitude: parseFloat(longitude),
-      date: new Date().toISOString().split("T")[0]  // Usa la fecha de hoy
-    },
-    view: {
-      type: "area",
-      parameters: {
-        position: {
-          equatorial: {
-            rightAscension: 0,
-            declination: 0
-          }
-        },
-        zoom: 6
-      }
-    }
-  });
-
+// Fetch star chart data using latitude and longitude
+const fetchStarChart = async (latitude, longitude) => {
+  const authHeader = `Basic ${btoa("3230dc54-3d55-4cca-b89a-977af275a135:9ca57b04eb6b07e4bba637d0848560a612356930fa3f7f465800ab9208e960c1999aa16c5fc8de08c75b1a4ca1497dfbfa94bb7bb640bc9de6625d816d6f2a7c70693829b2077af8ad70e301f8fbe0bc0e1f613f95ed528c474d1f77f0986a1eb8122efa8debd2f40b94a22dbe61e3b1")}`;
   try {
-    const response = await fetch(url, {
+    const response = await fetch("https://api.astronomyapi.com/api/v2/studio/star-chart", {
       method: "POST",
-      headers: {
-        "Authorization": authHeader,
-        "Content-Type": "application/json"
-      },
-      body: data
+      headers: { "Authorization": authHeader, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        style: "default",
+        observer: { latitude: +latitude, longitude: +longitude, date: new Date().toISOString().split("T")[0] },
+        view: { type: "area", parameters: { position: { equatorial: { rightAscension: 0, declination: 0 } }, zoom: 6 } }
+      })
     });
-
-    if (!response.ok) {
-      throw new Error(`Error: ${response.status}`);
+    if (response.ok) {
+      const result = await response.json();
+      starChartUrl = result.data.imageUrl;
+      displayStarChart();
     }
-    const result = await response.json();
-    console.log("Star Chart Data:", result);
-
-    // Almacenar la URL de la carta estelar
-    starChartUrl = result.data.imageUrl;
-
-    // Mostrar la imagen de la carta estelar en la página
-    displayStarChart();
   } catch (error) {
-    console.error("Failed to fetch star chart data", error);
+    console.error("Star Chart Error:", error);
   }
-}
+};
 
-// Función para mostrar la imagen del Star Chart en el segmento negro
-function displayStarChart() {
-  if (starChartUrl) {
-    const starChartImage = document.getElementById("star-chart");
-    starChartImage.src = starChartUrl;
-    starChartImage.style.display = "block"; // Mostrar la imagen
-  }
-}
+// Display the star chart image
+const displayStarChart = () => {
+  const starChartImage = document.getElementById("star-chart");
+  if (starChartUrl) starChartImage.src = starChartUrl, starChartImage.style.display = "block";
+};
 
-// Función para realizar la transición de la imagen a p5.js
-function fadeOutAndShowP5() {
+// Fade out the star chart image and show the p5.js canvas
+const fadeOutAndShowP5 = () => {
   const starChartImage = document.getElementById("star-chart");
   let opacity = 1;
-
-  // Disminuir gradualmente la opacidad
   const fadeOut = setInterval(() => {
-    if (opacity <= 0) {
-      clearInterval(fadeOut);
-      starChartImage.style.display = "none"; // Ocultar la imagen
-      document.getElementById("p5-container").style.display = "block"; // Mostrar el canvas de p5.js
-    }
+    if (opacity <= 0) clearInterval(fadeOut), starChartImage.style.display = "none", document.getElementById("p5-container").style.display = "block";
     starChartImage.style.opacity = opacity;
     opacity -= 0.05;
   }, 100);
-}
+};
 
-// Llamar a la función para obtener datos de geolocalización
-fetchGeolocationData();
+// Update background color based on scroll position
+window.onscroll = () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercentage = 1 - scrollTop / maxScroll;
 
-window.onscroll = function() {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+  const colorIndex = Math.floor(scrollPercentage * (colors.length - 1));
+  const nextColorIndex = Math.min(colorIndex + 1, colors.length - 1);
 
-  // Calcular el porcentaje de scroll de arriba a abajo (inverso)
-  let scrollPercentage = scrollTop / maxScroll;
+  const startColor = colors[colorIndex];
+  const endColor = colors[nextColorIndex];
+  const localPercentage = (scrollPercentage * (colors.length - 1)) % 1;
 
-  // Calcular los dos colores entre los que se hará la transición
-  let colorIndex = Math.floor(scrollPercentage * (colors.length - 1));
-  let nextColorIndex = Math.min(colorIndex + 1, colors.length - 1);
-
-  let startColor = colors[colorIndex];
-  let endColor = colors[nextColorIndex];
-
-  // Calcular el porcentaje local de scroll entre los dos colores
-  let localPercentage = (scrollPercentage * (colors.length - 1)) % 1;
-
-  // Interpolar entre los dos colores
-  let currentColor = {
+  const currentColor = {
     r: Math.floor(startColor.r + (endColor.r - startColor.r) * localPercentage),
     g: Math.floor(startColor.g + (endColor.g - startColor.g) * localPercentage),
     b: Math.floor(startColor.b + (endColor.b - startColor.b) * localPercentage)
   };
 
-  // Establecer el color de fondo del cuerpo
   document.body.style.backgroundColor = `rgb(${currentColor.r}, ${currentColor.g}, ${currentColor.b})`;
 
-  // Verificar si el fondo es negro (último segmento)
-  if (currentColor.r === 0 && currentColor.g === 0 && currentColor.b === 0) {
-    // Mostrar la imagen de la carta estelar en el segmento negro
-    displayStarChart();
-    // Iniciar el efecto de desvanecimiento para mostrar el canvas de p5.js
-    fadeOutAndShowP5();
-  } else {
-    // Ocultar la información de geolocalización y la carta estelar cuando no esté en el segmento negro
-    document.getElementById('geo-info').style.display = 'none';
-    document.getElementById("star-chart").style.display = "none";
-    document.getElementById("p5-container").style.display = "none";
-  }
+  if (currentColor.r === 0 && currentColor.g === 0 && currentColor.b === 0) displayStarChart(), fadeOutAndShowP5();
 };
 
-// Agregar elementos para mostrar la información de geolocalización y la imagen de la carta estelar
+// Create elements for displaying geolocation and star chart image
 document.addEventListener("DOMContentLoaded", () => {
-  // Crear el contenedor para mostrar la información de geolocalización
   const geoInfo = document.createElement("div");
   geoInfo.id = "geo-info";
-  geoInfo.style.position = "fixed";
-  geoInfo.style.bottom = "10px";
-  geoInfo.style.left = "50%";
-  geoInfo.style.transform = "translateX(-50%)";
-  geoInfo.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-  geoInfo.style.color = "#fff";
-  geoInfo.style.padding = "10px";
-  geoInfo.style.borderRadius = "5px";
-  geoInfo.style.boxShadow = "0 0 10px rgba(255,255,255,0.2)";
-  geoInfo.style.display = "none"; // Ocultar inicialmente
+  Object.assign(geoInfo.style, {
+    position: "fixed", bottom: "10px", left: "50%", transform: "translateX(-50%)", backgroundColor: "rgba(0, 0, 0, 0.8)",
+    color: "#fff", padding: "10px", borderRadius: "5px", boxShadow: "0 0 10px rgba(255,255,255,0.2)", display: "none"
+  });
   document.body.appendChild(geoInfo);
 
-  // Crear el contenedor para la imagen de la carta estelar
   const starChartImage = document.createElement("img");
   starChartImage.id = "star-chart";
-  starChartImage.style.position = "fixed";
-  starChartImage.style.bottom = "50px";
-  starChartImage.style.left = "50%";
-  starChartImage.style.transform = "translateX(-50%)";
-  starChartImage.style.display = "none"; // Ocultar inicialmente
-  starChartImage.style.maxWidth = "400px"; // Definir el ancho máximo para la imagen
-  starChartImage.style.maxHeight = "400px"; // Definir la altura máxima para la imagen
+  Object.assign(starChartImage.style, {
+    position: "fixed", bottom: "50px", left: "50%", transform: "translateX(-50%)", display: "none", maxWidth: "400px", maxHeight: "400px"
+  });
   document.body.appendChild(starChartImage);
+
+  fetchGeolocationData();  // Fetch geolocation data when the DOM is ready
 });
