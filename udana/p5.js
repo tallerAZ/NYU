@@ -3,7 +3,7 @@ let canvas;
 // Configuración inicial de p5.js
 function setup() {
   // Crear un canvas que se ajuste al contenedor "p5-container"
-  canvas = createCanvas(400, 400);
+  canvas = createCanvas(800, 800);
   canvas.parent('p5-container');  // Vincular el canvas al contenedor específico
   noLoop();  // Dibujar una sola vez y detener el bucle para optimizar
 }

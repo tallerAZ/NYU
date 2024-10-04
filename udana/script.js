@@ -140,4 +140,54 @@ window.onscroll = function() {
 
   // Interpolar entre los dos colores
   let currentColor = {
-    r: Math.floor(startColor.r + (endColor
+    r: Math.floor(startColor.r + (endColor.r - startColor.r) * localPercentage),
+    g: Math.floor(startColor.g + (endColor.g - startColor.g) * localPercentage),
+    b: Math.floor(startColor.b + (endColor.b - startColor.b) * localPercentage)
+  };
+
+  // Establecer el color de fondo del cuerpo
+  document.body.style.backgroundColor = `rgb(${currentColor.r}, ${currentColor.g}, ${currentColor.b})`;
+
+  // Verificar si el fondo es negro (último segmento)
+  if (currentColor.r === 0 && currentColor.g === 0 && currentColor.b === 0) {
+    // Mostrar la imagen de la carta estelar en el segmento negro
+    displayStarChart();
+    // Iniciar el efecto de desvanecimiento para mostrar el canvas de p5.js
+    fadeOutAndShowP5();
+  } else {
+    // Ocultar la información de geolocalización y la carta estelar cuando no esté en el segmento negro
+    document.getElementById('geo-info').style.display = 'none';
+    document.getElementById("star-chart").style.display = "none";
+    document.getElementById("p5-container").style.display = "none";
+  }
+};
+
+// Agregar elementos para mostrar la información de geolocalización y la imagen de la carta estelar
+document.addEventListener("DOMContentLoaded", () => {
+  // Crear el contenedor para mostrar la información de geolocalización
+  const geoInfo = document.createElement("div");
+  geoInfo.id = "geo-info";
+  geoInfo.style.position = "fixed";
+  geoInfo.style.bottom = "10px";
+  geoInfo.style.left = "50%";
+  geoInfo.style.transform = "translateX(-50%)";
+  geoInfo.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+  geoInfo.style.color = "#fff";
+  geoInfo.style.padding = "10px";
+  geoInfo.style.borderRadius = "5px";
+  geoInfo.style.boxShadow = "0 0 10px rgba(255,255,255,0.2)";
+  geoInfo.style.display = "none"; // Ocultar inicialmente
+  document.body.appendChild(geoInfo);
+
+  // Crear el contenedor para la imagen de la carta estelar
+  const starChartImage = document.createElement("img");
+  starChartImage.id = "star-chart";
+  starChartImage.style.position = "fixed";
+  starChartImage.style.bottom = "50px";
+  starChartImage.style.left = "50%";
+  starChartImage.style.transform = "translateX(-50%)";
+  starChartImage.style.display = "none"; // Ocultar inicialmente
+  starChartImage.style.maxWidth = "400px"; // Definir el ancho máximo para la imagen
+  starChartImage.style.maxHeight = "400px"; // Definir la altura máxima para la imagen
+  document.body.appendChild(starChartImage);
+});
