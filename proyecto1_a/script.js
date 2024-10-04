@@ -106,7 +106,7 @@ fetchGeolocationData();
 
 // Scroll to bottom when the page loads
 window.onload = function() {
-    // Start at the bottom of the page
+    // Start at the bottom of the page when it loads
     window.scrollTo(0, document.body.scrollHeight);
 };
 
