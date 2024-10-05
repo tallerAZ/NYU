@@ -61,7 +61,7 @@ async function fetchStarChart(latitude, longitude) {
                         declination: 0
                     }
                 },
-                zoom: 8
+                zoom: 2
             }
         }
     });
