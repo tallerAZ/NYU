@@ -138,6 +138,14 @@ window.onscroll = function() {
     // Set the background color of the body
     document.body.style.backgroundColor = `rgb(${currentColor.r}, ${currentColor.g}, ${currentColor.b})`;
 
+    // Show or hide the text based on scroll position
+    const textContainer = document.getElementById("brown-text-container");
+    if (colorIndex === 0) {
+        textContainer.style.visibility = "visible";
+    } else {
+        textContainer.style.visibility = "hidden";
+    }
+
     // Check if background is black (final segment)
     if (currentColor.r === 0 && currentColor.g === 0 && currentColor.b === 0) {
         // Display the geolocation data in the footer
@@ -155,7 +163,7 @@ window.onscroll = function() {
     }
 };
 
-// Add elements to display geolocation information and star chart image
+// Add elements to display geolocation information, star chart image, and text in the brown section
 document.addEventListener("DOMContentLoaded", () => {
     // Element to display geolocation information
     const geoInfo = document.createElement("div");
@@ -181,7 +189,14 @@ document.addEventListener("DOMContentLoaded", () => {
     starChartImage.style.transform = "translateX(-50%)";
     starChartImage.style.display = "block"; // Image should be initially set
     starChartImage.style.visibility = "hidden"; // Hide it initially
-    starChartImage.style.maxWidth = "400px"; // Set max width for image
-    starChartImage.style.maxHeight = "400px"; // Set max height for image
+    starChartImage.style.width = "800px"; // Set width to 800px
+    starChartImage.style.height = "800px"; // Set height to 800px
     document.body.appendChild(starChartImage);
-});
+
+    // Element to display the text in the brown section
+    const textContainer = document.createElement("div");
+    textContainer.id = "brown-text-container";
+    textContainer.style.position = "fixed";
+    textContainer.style.top = "50%";
+    textContainer.style.left = "50%";
+    text
