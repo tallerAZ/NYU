@@ -61,7 +61,7 @@ async function fetchStarChart(latitude, longitude) {
                         declination: 0
                     }
                 },
-                zoom: 8
+                zoom: 6
             }
         }
     });
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
     starChartImage.style.transform = "translateX(-50%)";
     starChartImage.style.display = "block"; // Image should be initially set
     starChartImage.style.visibility = "hidden"; // Hide it initially
-    starChartImage.style.width = "800px"; // Set width to 800px
-    starChartImage.style.height = "300px"; // Set height to 800px
+    starChartImage.style.width = "400px"; // Set width to 800px
+    starChartImage.style.height = "400px"; // Set height to 800px
     document.body.appendChild(starChartImage);
 });
