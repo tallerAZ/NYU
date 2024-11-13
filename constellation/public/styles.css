@@ -1,0 +1,168 @@
+/* General body styling */
+body {
+    background-color: #00082D; /* Deep navy background color */
+    color: white; /* Default text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: normal; /* Set default font weight to normal */
+}
+
+/* Logo styling */
+#logo {
+    margin-top: 20px;
+}
+
+/* Heading styling (non-bold) */
+h1, h2, h3 {
+    margin: 10px 0;
+    text-align: center;
+    font-weight: normal; /* Ensure headings are not bold */
+}
+
+/* Star name display styling */
+#star-name {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: normal; /* Ensure star name is not bold */
+}
+
+/* Input fields and sliders */
+input[type="text"],
+input[type="range"],
+button {
+    margin: 5px;
+}
+
+/* Center sliders with labels for Brightness and Size */
+.slider-container {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.slider-container label {
+    margin-right: 10px;
+    width: 70px; /* Adjust width to align labels */
+    font-weight: normal; /* Ensure labels are not bold */
+}
+
+.slider-container input[type="range"] {
+    flex: 1;
+}
+
+/* Button styling */
+button {
+    background-color: #FFD700; /* Yellow/golden color for button */
+    color: #00082D; /* Dark text color for contrast */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal; /* Ensure button text is not bold */
+}
+
+button:hover {
+    background-color: #FFC700; /* Slightly darker yellow on hover */
+}
+
+/* Canvas styling to place the star canvas in desired location */
+canvas {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Link styling for all link states */
+a:link {
+    color: white; /* Default link color */
+    text-decoration: none;
+    font-weight: normal; /* Ensure links are not bold */
+}
+
+a:visited {
+    color: yellow; /* Visited link color */
+}
+
+a:hover {
+    color: orange; /* Hover link color */
+    text-decoration: underline;
+}
+
+a:active {
+    color: red; /* Active link color */
+}
+
+/* Tooltip styling for star info on hover */
+.tooltip {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: #FFD700; /* Yellow text */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    position: absolute;
+    pointer-events: none; /* Ensures tooltips don't interfere with mouse */
+    font-weight: normal; /* Ensure tooltips are not bold */
+}
+
+/* Responsive styling adjustments */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    #star-name {
+        font-size: 20px;
+    }
+}
+
+/* New styles for constellation page instructions and footer link */
+
+/* Instruction styling above the canvas */
+.instruction {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.instruction .key {
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
+    color: #00082D;
+    margin: 0 5px;
+}
+
+/* Canvas container styling */
+#canvas-container {
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    margin: 20px 0;
+}
+
+/* Footer styling for "come back" link */
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
