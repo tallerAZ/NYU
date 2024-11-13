@@ -1,0 +1,146 @@
+[
+  {
+    "x": 1200,
+    "y": 150,
+    "size": 15,
+    "name": "Star A",
+    "transparency": 255,
+    "createdAt": "2024-11-01T00:00:00Z",
+    "rotation": 0.5
+  },
+  {
+    "x": 300,
+    "y": 550,
+    "size": 20,
+    "name": "Star B",
+    "transparency": 240,
+    "createdAt": "2024-11-02T00:00:00Z",
+    "rotation": 1.2
+  },
+  {
+    "x": 500,
+    "y": 350,
+    "size": 18,
+    "name": "Star C",
+    "transparency": 230,
+    "createdAt": "2024-11-03T00:00:00Z",
+    "rotation": 0.8
+  },
+  {
+    "x": 600,
+    "y": 200,
+    "size": 22,
+    "name": "Star D",
+    "transparency": 220,
+    "createdAt": "2024-11-04T00:00:00Z",
+    "rotation": 1
+  },
+  {
+    "x": 1150,
+    "y": 400,
+    "size": 16,
+    "name": "Star E",
+    "transparency": 210,
+    "createdAt": "2024-11-05T00:00:00Z",
+    "rotation": 1.5
+  },
+  {
+    "x": 700,
+    "y": 450,
+    "size": 24,
+    "name": "Star F",
+    "transparency": 200,
+    "createdAt": "2024-11-06T00:00:00Z",
+    "rotation": 0.3
+  },
+  {
+    "x": 1400,
+    "y": 300,
+    "size": 19,
+    "name": "Star G",
+    "transparency": 195,
+    "createdAt": "2024-11-07T00:00:00Z",
+    "rotation": 1.8
+  },
+  {
+    "x": 786.5,
+    "y": 447.75,
+    "size": 32,
+    "name": "dd",
+    "transparency": 254.99846498330535,
+    "createdAt": "2024-11-13T04:03:21.030Z",
+    "rotation": 52.48608090576581
+  },
+  {
+    "x": 738.5,
+    "y": 364.75,
+    "size": 10,
+    "name": "eee",
+    "transparency": 254.9998958357472,
+    "createdAt": "2024-11-13T04:05:19.709Z",
+    "rotation": 7.897195235447157
+  },
+  {
+    "x": 656.5,
+    "y": 208.75,
+    "size": 10,
+    "name": "dddd",
+    "transparency": 254.99987834929394,
+    "createdAt": "2024-11-13T04:05:33.457Z",
+    "rotation": 5.6453417812432045
+  },
+  {
+    "x": 595.5,
+    "y": 350.75,
+    "size": 19,
+    "name": "sss",
+    "transparency": 254.99988866067952,
+    "createdAt": "2024-11-13T04:06:24.784Z",
+    "rotation": 0
+  },
+  {
+    "x": 605.5,
+    "y": 270,
+    "size": 29,
+    "name": "ssssss",
+    "transparency": 254.9999210446464,
+    "createdAt": "2024-11-13T04:09:33.813Z",
+    "rotation": 0
+  },
+  {
+    "x": 799.5,
+    "y": 305,
+    "size": 22,
+    "name": "hola",
+    "transparency": 196.99987857770947,
+    "createdAt": "2024-11-13T04:11:12.245Z",
+    "rotation": 0
+  },
+  {
+    "x": 150.5,
+    "y": 486,
+    "size": 37,
+    "name": "qqq",
+    "transparency": 254.9996842822899,
+    "createdAt": "2024-11-13T04:15:12.417Z",
+    "rotation": 0
+  },
+  {
+    "x": 932.5,
+    "y": 467,
+    "size": 10,
+    "name": "qqqq",
+    "transparency": 254.99991697630864,
+    "createdAt": "2024-11-13T04:17:03.667Z",
+    "rotation": 0
+  },
+  {
+    "x": 396.5,
+    "y": 598,
+    "size": 10,
+    "name": "your star",
+    "transparency": 254.9999199498937,
+    "createdAt": "2024-11-13T04:18:46.816Z",
+    "rotation": 0
+  }
+]

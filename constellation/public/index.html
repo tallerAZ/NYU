@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Constellation</title>
+    <!-- Add Socket.IO client library -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Add p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- Link to your custom JavaScript file -->
+    <script src="constellation.js" defer></script>
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" id="logo" alt="Logo">
+        <p id="star-name">Your Star</p>
+    </header>
+    
+    <!-- Sliders for brightness and size, and text input for naming the star -->
+    <div class="slider-container">
+        <label for="brightness">Brightness</label>
+        <input type="range" id="brightness" name="brightness" min="1" max="10" value="5">
+    </div>
+    
+    <div class="slider-container">
+        <label for="size">Size</label>
+        <input type="range" id="size" name="size" min="1" max="10" value="5">
+    </div>
+
+    <div>
+        <label for="name">Name it</label>
+        <input type="text" id="name" name="name" placeholder="Enter star name">
+    </div>
+    
+    <button id="launch-star">Launch Your Star</button>
+    
+    <!-- Canvas container for p5.js -->
+    <div id="canvas-container"></div>
+
+    <!-- Link back to the first page (optional) -->
+    <footer>
+        <a href="index.html"><<< Come back...</a>
+    </footer>
+</body>
+</html>
