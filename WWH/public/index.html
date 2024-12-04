@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenida</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Idioma -->
+    <section class="section language">
+      <img src="assets/1.png" alt="Welcome Icon" class="section-icon">
+      <div class="section-left">
+        
+        <h2 id="language-title">Select your language</h2>
+      </div>
+      <div class="section-right">
+        <div class="language-options">
+          <button data-lang="en">English</button>
+          <button data-lang="es">Español</button>
+          <button data-lang="fr">Français</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bienvenida -->
+    <section class="section welcome">
+      <div class="welcome-content">
+        <div>
+          <img src="assets/2.png" alt="Welcome Icon" class="section-icon">
+          <h2 id="welcome-title">Welcome</h2>
+          <p id="welcome-text">
+            Here begins your journey through the exhibition “Poetry is an Invasion”. Tell us a little more about your interests before starting so we can help you find the best pieces for you.
+          </p>
+        </div>
+        <img src="assets/invasion.png" alt="Exhibition Graphic" class="graphic">
+      </div>
+    </section>
+
+    <!-- Tiempo -->
+    <section class="section time">
+      <div class="section-left">
+        <img src="assets/3.png" alt="Pieces Icon" class="section-icon">
+        <h2 id="time-title">How much time do you have?</h2>
+      </div>
+      <div class="section-right">
+        <div class="time-slider-wrapper">
+          <span>10m</span>
+          <input type="range" min="10" max="180" value="30" class="time-slider">
+          <span>3h</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Etiquetas -->
+    <section class="section tags">
+      <div class="section-left">
+        <img src="assets/4.png" alt="Pieces Icon" class="section-icon">
+        <h2 id="tags-title">Choose your tags</h2>
+      </div>
+      <div class="section-right">
+        <p id="tags-list">        Loading tags...</p>
+      </div>
+    </section>
+
+    <!-- Piezas -->
+
+    <section class="section pieces">
+      <div class="section-left">
+        <img src="assets/5.png" alt="Pieces Icon" class="section-icon">
+        <h2 id="pieces-title">Pieces in the gallery</h2>
+      </div>
+      <div class="section-right">
+        <ul id="pieces-list">
+          Loading pieces...
+        </ul>
+      </div>
+    </section>
+
+    <!-- Botón de inicio -->
+    <div class="start-button">
+      <button>Empieza tu recorrido >></button>
+    </div>
+  </div>
+
+  <!-- Logo inferior -->
+  <footer>
+    <img src="assets/WWH.png" alt="WWH Logo" class="footer-logo">
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
