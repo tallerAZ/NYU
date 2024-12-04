@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de la Obra</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Título de la obra -->
+    <section class="section title">
+      <div class="section-left">
+        <img src="assets/1.png" alt="Title Icon" class="section-icon">
+        <h2 id="piece-title">Loading title...</h2>
+      </div>
+      <div class="section-right">
+        <p id="piece-date">Loading date...</p>
+      </div>
+    </section>
+
+    <!-- Introducción -->
+    <section class="section description">
+      <div class="section-left">
+        <img src="assets/2.png" alt="Description Icon" class="section-icon">
+        <h2 id="introduction-title">Description</h2>
+      </div>
+      <div class="section-right">
+        <p id="piece-description">Loading description...</p>
+      </div>
+    </section>
+
+    <!-- Multimedia -->
+    <section class="section multimedia">
+      <div class="section-left">
+        <img src="assets/3.png" alt="Multimedia Icon" class="section-icon">
+        <h2 id="multimedia-title">Multimedia</h2>
+      </div>
+      <div class="section-right">
+        <div id="piece-multimedia">
+          <!-- Video o juego cargará aquí -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Comentarios -->
+    <section class="section comments">
+      <div class="section-left">
+        <img src="assets/4.png" alt="Comments Icon" class="section-icon">
+        <h2 id="comments-title">Comments</h2>
+      </div>
+      <div class="section-right">
+        <ul id="piece-comments">
+          <!-- Comentarios cargados dinámicamente -->
+        </ul>
+        <textarea id="new-comment" placeholder="Add your comment here"></textarea>
+        <button id="add-comment-btn">Add Comment</button>
+      </div>
+    </section>
+
+    <!-- Botón para continuar -->
+    <div class="start-button">
+      <button onclick="window.history.back()">Sigue tu recorrido >></button>
+    </div>
+  </div>
+
+  <!-- Logo inferior -->
+  <footer>
+    <img src="assets/WWH.png" alt="WWH Logo" class="footer-logo">
+  </footer>
+
+  <script src="piece.js"></script>
+</body>
+</html>

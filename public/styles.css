@@ -1,0 +1,143 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B3B3B3;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 820px;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  .section {
+    background: white;
+    margin: 20px 0; /* Espacio entre secciones */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex; /* Dividir la sección en dos columnas */
+    flex-direction: row; /* Asegurar que los elementos estén uno al lado del otro */
+  }
+  
+  
+  .section-icon {
+    height: 60px; /* Tamaño del ícono */
+    margin-left: -21px; /* Mover los íconos 5px hacia la izquierda */
+    margin-right: 15px; /* Espacio entre ícono y texto */
+  }
+
+  .section-left {
+    width: 50%; /* La parte izquierda ocupa el 50% */
+    padding-right: 20px; /* Espacio entre el título y la parte derecha */
+    display: flex;
+    align-items: center; /* Centrar verticalmente el título */
+  }
+  
+  .section-left h1,
+  .section-left h2 {
+    text-align: left; /* Alinear el título a la izquierda */
+    margin: 0;
+  }
+  
+  .section-right {
+    width: 50%; /* La parte derecha ocupa el 50% */
+    padding-left: 20px; /* Espacio entre la parte izquierda y el contenido */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+  }
+  
+  footer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  footer img.footer-logo {
+    height: 60px; /* Incrementar tamaño al 50% */
+    margin-left: 250px; /* Mover el logo 250px a la derecha */
+  }
+  
+  .language-options button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .language-options button:hover {
+    background-color: #999;
+  }
+  
+  .welcome-content {
+    display: flex;
+    align-items: center; /* Alinear verticalmente imagen y texto */
+    justify-content: space-between; /* Mantener separación entre texto e imagen */
+  }
+  
+  .welcome-content img.graphic {
+    max-width: 400px;
+    margin-left: 20px;
+    height: auto; /* Mantener proporción */
+    border: 0.1px solid #ccc; /* Borde gris de 0.1 píxeles */
+  }
+  
+  .time-slider-wrapper {
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; /* Mantener las etiquetas a los lados del slider */
+  }
+  
+  .time-slider-wrapper span {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .time-slider {
+    width: 100%;
+    margin: 0 10px; /* Espaciado entre las etiquetas y el slider */
+  }
+  
+  .tags p, .pieces ul {
+    text-align: left;
+    list-style: none;
+  }
+  
+  .pieces ul li {
+    margin: 5px 0;
+  }
+  
+  .tags p {
+    font-size: 14px;
+  }
+  
+  .start-button {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .start-button button {
+    background-color: #ccc;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .start-button button:hover {
+    background-color: #999;
+  }
+  
+  /* Espacio gris entre secciones */
+  .section + .section {
+    margin-top: 20px;
+  }
