@@ -1,143 +1,392 @@
-
-  body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #B3B3B3;
     color: #333;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 820px;
     margin: auto;
     padding: 20px 0;
-  }
-  
-  .section {
+}
+
+.section {
     background: white;
-    margin: 20px 0; /* Espacio entre secciones */
+    margin: 20px 0;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    display: flex; /* Dividir la sección en dos columnas */
-    flex-direction: row; /* Asegurar que los elementos estén uno al lado del otro */
-  }
-  
-  
-  .section-icon {
-    height: 60px; /* Tamaño del ícono */
-    margin-left: -21px; /* Mover los íconos 5px hacia la izquierda */
-    margin-right: 15px; /* Espacio entre ícono y texto */
-  }
-
-  .section-left {
-    width: 50%; /* La parte izquierda ocupa el 50% */
-    padding-right: 20px; /* Espacio entre el título y la parte derecha */
     display: flex;
-    align-items: center; /* Centrar verticalmente el título */
+    flex-direction: row;
+}
+
+.section-icon {
+    height: 60px;
+    margin-left: -21px;
+    margin-right: 15px;
+}
+
+.section-left {
+    width: 50%;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.section-left h1,
+.section-left h2 {
+    text-align: left;
+    margin: 0;
+}
+
+.section-right {
+    width: 50%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #B3B3B3;
+    border-top: 1px solid #B3B3B3;
+}
+
+footer img.footer-logo {
+    height: 80px;
+}
+
+/* Language Links */
+.language-options a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.language-options a:visited {
+    color: black;
+}
+
+.language-options a:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.language-options a.active {
+    background-color: black; /* Fondo negro para idioma seleccionado */
+    color: white; /* Texto blanco */
+    text-decoration: none;
+    cursor: default;
+}
+
+/* Welcome Section */
+.welcome-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome-content img.graphic {
+    max-width: 500px;
+    margin-left: 20px;
+    height: auto;
+    border: 0.1px solid #ccc;
+}
+
+/* Slider Section */
+.time-slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time-slider-wrapper span {
+    font-size: 14px;
+    color: #333;
+}
+
+.slider-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+}
+
+.time-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 16px;
+    background: linear-gradient(to right, #e0e0e0, #1f1f1f);
+    border-radius: 5px;
+    outline: none;
+}
+
+.time-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: black;
+    width: 24px;
+    height: 24px;
+}
+
+.time-slider::-moz-range-thumb {
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: black;
+    width: 24px;
+    height: 24px;
+}
+
+.slider-value {
+    position: absolute;
+    top: -35px;
+    left: 0;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+    transition: left 0.1s ease;
+}
+
+.time-slider-wrapper span:last-child {
+    margin-left: 40px;
+}
+/* Sección Tags */
+.section.tags {
+    display: flex;
+    gap: 20px; /* Espaciado entre la columna izquierda y derecha */
   }
   
-  .section-left h1,
-  .section-left h2 {
-    text-align: left; /* Alinear el título a la izquierda */
+  /* Contenido de la izquierda */
+  .section-left {
+    display: flex;
+    flex-direction: column; /* Coloca el contenido en columna */
+    gap: 15px; /* Espaciado entre el título y la lista seleccionada */
+    align-items: flex-start; /* Alinea todo a la izquierda */
+  }
+  
+  /* Contenedor de los tags seleccionados */
+  #selected-tags-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaciado entre el título de los tags y la lista */
+    margin-top: 10px;
+  }
+  
+  /* Título de los tags seleccionados */
+  #selected-tags-title {
+    font-weight: bold;
+    font-size: 16px;
     margin: 0;
   }
   
+  /* Lista de tags seleccionados */
+  #selected-tags-list {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los tags seleccionados se ajusten */
+    gap: 10px;
+    list-style: none; /* Quitar viñetas */
+    padding: 0; /* Quitar márgenes internos */
+  }
+  
+  /* Tags seleccionados */
+  #selected-tags-list li {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor clickeable para deseleccionar */
+  }
+  
+  /* Hover en tags seleccionados */
+  #selected-tags-list li:hover {
+    background-color: #555; /* Fondo gris oscuro al pasar el mouse */
+    color: white;
+  }
+  
+  /* Lista general de tags disponibles */
   .section-right {
-    width: 50%; /* La parte derecha ocupa el 50% */
-    padding-left: 20px; /* Espacio entre la parte izquierda y el contenido */
     display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: flex-start; /* Alinear contenido a la izquierda */
   }
   
-  footer {
+  #tags-list {
     display: flex;
-    align-items: center;
-    padding: 20px;
+    flex-wrap: wrap; /* Permitir que los tags se ajusten en varias líneas */
+    gap: 10px; /* Espaciado entre los tags */
+    margin-top: 10px;
+    text-align: left; /* Alinear texto a la izquierda */
   }
   
-  footer img.footer-logo {
-    height: 60px; /* Incrementar tamaño al 50% */
-    margin-left: 250px; /* Mover el logo 250px a la derecha */
-  }
-  
-  .language-options button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #ccc;
+  /* Enlace de tag general */
+  .tag-link {
+    text-decoration: underline;
     color: black;
+    cursor: pointer;
   }
   
-  .language-options button:hover {
-    background-color: #999;
+  .tag-link:hover {
+    color: #555; /* Color más claro al pasar el mouse */
   }
-  
-  .welcome-content {
+
+  .tag-container {
+    margin-left: 10px;
+    display: inline-flex;
+    gap: 5px;
+}
+
+.selected-tag {
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+/* Pieces Section */
+.pieces a {
+    color: black;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.pieces a:hover {
+    color: #666;
+}
+
+.pieces a:visited {
+    color: #a0a0a0;
+}
+/* Map Section */
+.map {
     display: flex;
-    align-items: center; /* Alinear verticalmente imagen y texto */
-    justify-content: space-between; /* Mantener separación entre texto e imagen */
-  }
-  
-  .welcome-content img.graphic {
-    max-width: 400px;
-    margin-left: 20px;
-    height: auto; /* Mantener proporción */
-    border: 0.1px solid #ccc; /* Borde gris de 0.1 píxeles */
-  }
-  
-  .time-slider-wrapper {
+    flex-direction: row;
+    align-items: flex-start; /* Alinear al inicio para mayor control del contenido */
+    gap: 20px; /* Espacio entre la sección izquierda y derecha */
+}
+
+.map .section-left {
     display: flex;
-    align-items: center; /* Alinear verticalmente */
-    justify-content: space-between; /* Mantener las etiquetas a los lados del slider */
-  }
-  
-  .time-slider-wrapper span {
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .time-slider {
-    width: 100%;
-    margin: 0 10px; /* Espaciado entre las etiquetas y el slider */
-  }
-  
-  .tags p, .pieces ul {
-    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; /* Asegura que el contenido comience desde arriba */
+    gap: 15px; /* Espaciado entre elementos */
+    width: 40%; /* Asigna más espacio a la izquierda */
+}
+
+.map .section-left h2 {
+    margin: 0;
+    font-size: 1.5em; /* Tamaño ajustado para destacar el título */
+}
+
+.map .section-left p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4; /* Mejora la legibilidad del texto */
+}
+
+.map .section-left ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
-  }
-  
-  .pieces ul li {
-    margin: 5px 0;
-  }
-  
-  .tags p {
-    font-size: 14px;
-  }
-  
-  .start-button {
+    width: 100%; /* Asegura que la lista ocupe todo el ancho disponible */
+}
+
+.map .section-left ul li {
+    font-size: 0.9em;
+    margin-bottom: 8px; /* Espaciado entre elementos de la lista */
+    padding: 5px 10px;
+    background-color: #f8f8f8; /* Fondo suave para destacar las piezas */
+    border: 1px solid #ddd; /* Bordes claros para separar las piezas */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+}
+
+.map .section-left ul li a {
+    color: black;
+    text-decoration: underline;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.map .section-left ul li a:hover {
+    color: #666;
+}
+
+.map .section-left ul li a:visited {
+    color: #a0a0a0;
+}
+
+.map .section-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%; /* Espacio asignado a la imagen/canvas */
+    max-width: 400px; /* Limitar el ancho al tamaño del canvas */
+}
+
+/* Contenedor del canvas de p5.js */
+#p5-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente el canvas */
+    align-items: center; /* Centrar verticalmente el canvas */
+    width: 400px; /* Ancho fijo del canvas */
+    height: 400px; /* Altura fija del canvas */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    border: 1px solid #ddd; /* Borde suave */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el canvas */
+}
+
+/* Imagen dentro del canvas (mapa) */
+#p5-container canvas {
+    display: block;
+    width: 100%; /* Ajusta al tamaño del contenedor */
+    height: 100%; /* Ajusta al tamaño del contenedor */
+    border-radius: 5px; /* Bordes redondeados del canvas */
+}
+
+/* Start Button */
+.start-button {
     text-align: center;
     margin-top: 20px;
-  }
-  
-  .start-button button {
+}
+
+.start-button button {
     background-color: #ccc;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  .start-button button:hover {
+}
+
+.start-button button:hover {
     background-color: #999;
-  }
-  
-  /* Espacio gris entre secciones */
-  .section + .section {
-    margin-top: 20px;
-  }
+}
