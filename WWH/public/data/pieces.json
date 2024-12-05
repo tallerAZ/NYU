@@ -11,11 +11,12 @@
         "tags_es": "libro, agua, gráfico, artesanal",
         "tags_en": "book, water, graphic, artesanal",
         "tags_fr": "livre, eau, graphique, artisanat",
-        "duration": "03:00:00",
+        "duration": "00:03:00",
         "location": "1",
-        "video": "monalisa.mp4",
+        "video": "",
         "game": "",
-        "comments": "[]"
+        "comments": "[]",
+        "coordenada": [298.8125, 95.046875]
     },
     {
         "id": "2",
@@ -29,11 +30,12 @@
         "tags_es": "gráfico, rosa, amor",
         "tags_en": "graphics, roses, love",
         "tags_fr": "amour, rose, graphique",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "1",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [316.8125, 135.046875]
     },
     {
         "id": "3",
@@ -47,11 +49,12 @@
         "tags_es": "gráfico, amor",
         "tags_en": "graphic, love",
         "tags_fr": "amour graphique",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "1",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [317.8125, 179.046875]
     },
     {
         "id": "4",
@@ -69,7 +72,8 @@
         "location": "1",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [62.8125, 152.046875]
     },
     {
         "id": "5",
@@ -83,11 +87,12 @@
         "tags_es": "amor, interactivo, flash",
         "tags_en": "love, interactive, flash",
         "tags_fr": "amour, interactif, flash",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "1",
-        "video": "",
+        "video": "https://youtu.be/iKNTAQSxzgw?si=CmXKit2fbuZFiLKf",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [281.8125, 221.046875]
     },
     {
         "id": "6",
@@ -101,11 +106,12 @@
         "tags_es": "electrónica, mecánico",
         "tags_en": "electronic, mechanical",
         "tags_fr": "électronique, mécanique",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "1",
         "video": "https://youtu.be/r_yAkC2cSUk?si=zcjhEEGPtGddBxz8",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [203.8125, 209.046875]
     },
     {
         "id": "7",
@@ -119,11 +125,12 @@
         "tags_es": "filtro, gráfico, interactivo",
         "tags_en": "filter, graphic, interactive",
         "tags_fr": "filtre, graphique, interactif",
-        "duration": "01:00:00",
+        "duration": "00:01:00",
         "location": "1",
-        "video": "",
+        "video": "https://youtu.be/N3isUDDv-h4?si=JfgbJYsxLGO4qysA",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [171.8125, 193.046875]
     },
     {
         "id": "8",
@@ -137,29 +144,31 @@
         "tags_es": "3d, esfera",
         "tags_en": "3d, sphere",
         "tags_fr": "sphère, 3D",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "2",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [223.8125, 154.046875]
     },
     {
         "id": "9",
-        "title_es": "grita",
-        "title_en": "scream",
-        "title_fr": "crier",
-        "fecha": "Lima, 2004",
-        "description_es": "se basa en una reacción aleatoria ante un estímulo por parte del lector, el poema no funciona si el lector no obedece la instrucción que denota su título. Si el lector quiere leer, debe gritar. Las frases aparecen sin ningún orden particular y solo pueden ser leídas en tanto el grito se mantenga. El poema digital así busca robarle al lector su aliento para poder expresar la fuerza de su semántica al montarse sobre la potencia de la voz humana hecha grito.",
-        "description_en": "is based on a random reaction to a stimulus by the reader; the poem does not work if the reader does not obey the instruction denoted by its title. If the reader wants to read, he must shout. The phrases appear in no particular order and can only be read as long as the shout is maintained. The digital poem thus seeks to steal the reader's breath in order to express the force of its semantics by mounting on the power of the human voice made into a shout.",
-        "description_fr": "Il est basé sur une réaction aléatoire à un stimulus de la part du lecteur, le poème ne fonctionne pas si le lecteur n'obéit pas à l'instruction désignée par son titre. Si le lecteur veut lire, il doit crier. Les phrases apparaissent sans ordre particulier et ne peuvent être lues que tant que le cri continue. Le poème numérique cherche ainsi à priver le lecteur de son souffle pour exprimer la force de sa sémantique en surfant sur la puissance de la voix humaine transformée en cri.",
-        "tags_es": "interactivo, oral, flash",
-        "tags_en": "interactive, oral, flash",
-        "tags_fr": "interactif, oral, flash",
-        "duration": "02:00:00",
+        "title_es": "concepción del dragón",
+        "title_en": "dragon conception",
+        "title_fr": "conception de dragon",
+        "fecha": "Lima, 2007",
+        "description_es": " asistimos al proceso completo de escritura de un poema. Vemos cada uno de los “arranques” poéticos desde el primero al último gracias a un proceso de guardado automatizado en cada pausa. El poema incluye profundamente al lector en los pasos de la escritura; así se puede presenciar la mutación de las imágenes, el nacimiento de los elementos y finalmente la intención del estilo del autor. Es una obra que medita sobre el proceso de la escritura como la creación de una metáfora, es decir la unión de imágenes con intención expresiva siempre con la meta de generar una pieza completamente nueva, en este caso, un dragón.",
+        "description_en": "we witness the complete process of writing a poem. We see each of the poetic “starts” from the first to the last thanks to an automated saving process at each pause. The poem deeply includes the reader in the steps of writing; thus, one can witness the mutation of the images, the birth of the elements and finally the intention of the author’s style. It is a work that meditates on the process of writing as the creation of a metaphor, that is, the union of images with expressive intention always with the goal of generating a completely new piece, in this case, a dragon.",
+        "description_fr": " Nous assistons au processus complet d’écriture d’un poème. On voit chacun des « départs » poétiques du premier au dernier grâce à un processus de sauvegarde automatisé à chaque pause. Le poème inclut profondément le lecteur dans les étapes de l'écriture ; On assiste ainsi à la mutation des images, à la naissance des éléments et enfin à l'intention du style de l'auteur. C'est une œuvre qui médite sur le processus d'écriture comme création d'une métaphore, c'est-à-dire l'union d'images avec des intentions expressives, toujours dans le but de générer une pièce complètement nouvelle, en l'occurrence un dragon.",
+        "tags_es": "interactivo, escribir",
+        "tags_en": "interactivo, escribir",
+        "tags_fr": "interactif, écrire",
+        "duration": "00:01:00",
         "location": "3",
-        "video": "",
+        "video": "https://youtu.be/iIvax-czDoY?si=sOAz88MLOEvYlNvG",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [147.8125, 116.046875]
     },
     {
         "id": "10",
@@ -173,29 +182,31 @@
         "tags_es": "flash, interactivo, amor",
         "tags_en": "flash, interactive, love",
         "tags_fr": "flash, interactif, amour",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "3",
-        "video": "",
+        "video": "https://youtu.be/GaU1FwnkH-M?si=jnxeJMySkWCu1_GL",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [110.8125, 115.046875]
     },
     {
         "id": "11",
-        "title_es": "concepción del dragón",
-        "title_en": "dragon conception",
-        "title_fr": "conception de dragon",
-        "fecha": "Lima, 2007",
-        "description_es": " asistimos al proceso completo de escritura de un poema. Vemos cada uno de los “arranques” poéticos desde el primero al último gracias a un proceso de guardado automatizado en cada pausa. El poema incluye profundamente al lector en los pasos de la escritura; así se puede presenciar la mutación de las imágenes, el nacimiento de los elementos y finalmente la intención del estilo del autor. Es una obra que medita sobre el proceso de la escritura como la creación de una metáfora, es decir la unión de imágenes con intención expresiva siempre con la meta de generar una pieza completamente nueva, en este caso, un dragón.",
-        "description_en": "we witness the complete process of writing a poem. We see each of the poetic “starts” from the first to the last thanks to an automated saving process at each pause. The poem deeply includes the reader in the steps of writing; thus, one can witness the mutation of the images, the birth of the elements and finally the intention of the author’s style. It is a work that meditates on the process of writing as the creation of a metaphor, that is, the union of images with expressive intention always with the goal of generating a completely new piece, in this case, a dragon.",
-        "description_fr": " Nous assistons au processus complet d’écriture d’un poème. On voit chacun des « départs » poétiques du premier au dernier grâce à un processus de sauvegarde automatisé à chaque pause. Le poème inclut profondément le lecteur dans les étapes de l'écriture ; On assiste ainsi à la mutation des images, à la naissance des éléments et enfin à l'intention du style de l'auteur. C'est une œuvre qui médite sur le processus d'écriture comme création d'une métaphore, c'est-à-dire l'union d'images avec des intentions expressives, toujours dans le but de générer une pièce complètement nouvelle, en l'occurrence un dragon.",
-        "tags_es": "interactivo, escribir",
-        "tags_en": "interactivo, escribir",
-        "tags_fr": "interactif, écrire",
-        "duration": "01:00:00",
+        "title_es": "grita",
+        "title_en": "scream",
+        "title_fr": "crier",
+        "fecha": "Lima, 2004",
+        "description_es": "se basa en una reacción aleatoria ante un estímulo por parte del lector, el poema no funciona si el lector no obedece la instrucción que denota su título. Si el lector quiere leer, debe gritar. Las frases aparecen sin ningún orden particular y solo pueden ser leídas en tanto el grito se mantenga. El poema digital así busca robarle al lector su aliento para poder expresar la fuerza de su semántica al montarse sobre la potencia de la voz humana hecha grito.",
+        "description_en": "is based on a random reaction to a stimulus by the reader; the poem does not work if the reader does not obey the instruction denoted by its title. If the reader wants to read, he must shout. The phrases appear in no particular order and can only be read as long as the shout is maintained. The digital poem thus seeks to steal the reader's breath in order to express the force of its semantics by mounting on the power of the human voice made into a shout.",
+        "description_fr": "Il est basé sur une réaction aléatoire à un stimulus de la part du lecteur, le poème ne fonctionne pas si le lecteur n'obéit pas à l'instruction désignée par son titre. Si le lecteur veut lire, il doit crier. Les phrases apparaissent sans ordre particulier et ne peuvent être lues que tant que le cri continue. Le poème numérique cherche ainsi à priver le lecteur de son souffle pour exprimer la force de sa sémantique en surfant sur la puissance de la voix humaine transformée en cri.",
+        "tags_es": "interactivo, oral, flash",
+        "tags_en": "interactive, oral, flash",
+        "tags_fr": "interactif, oral, flash",
+        "duration": "00:02:00",
         "location": "3",
-        "video": "",
+        "video": "https://youtu.be/bCNWuD2rJw4?si=xrY3yXarxyJZJrOa",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [74.8125, 115.046875]
     },
     {
         "id": "12",
@@ -213,7 +224,8 @@
         "location": "4",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [140.8125, 153.046875]
     },
     {
         "id": "13",
@@ -231,43 +243,46 @@
         "location": "4",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [139.8125, 163.046875]
     },
     {
         "id": "14",
         "title_es": "extravía",
         "title_en": "extravía",
         "title_fr": "égarés",
-        "fecha": "Hipertexto físico a manera de laberinto donde los usuarios pueden seguir su ruta que en cada intersección divide el poema en diferente posibilidades.",
-        "description_es": "Physical hypertext in the form of a labyrinth where users can follow its route that at each intersection divides the poem into different possibilities.",
-        "description_en": "Hypertexte physique comme un labyrinthe où les utilisateurs peuvent suivre leur itinéraire qui, à chaque intersection, divise le poème en différentes possibilités.",
-        "description_fr": "",
+        "fecha": "Lima, 2005",
+        "description_es": "Hipertexto físico a manera de laberinto donde los usuarios pueden seguir su ruta que en cada intersección divide el poema en diferente posibilidades.",
+        "description_en": "Physical hypertext in the form of a labyrinth where users can follow its route that at each intersection divides the poem into different possibilities.",
+        "description_fr": "Hypertexte physique comme un labyrinthe où les utilisateurs peuvent suivre leur itinéraire qui, à chaque intersection, divise le poème en différentes possibilités.",
         "tags_es": "instalación, hipertexto",
         "tags_en": "installation, hypertext",
         "tags_fr": "installation, hypertexte",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "4",
-        "video": "",
+        "video": "https://youtu.be/uQOE8ZevGOw?si=0P2RQoaP2F4d0SkI",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [138.8125, 172.046875]
     },
     {
         "id": "15",
         "title_es": "retablo circular",
         "title_en": "circular altarpiece",
         "title_fr": "retable circulaire",
-        "fecha": "Objeto interactivo en que el lector puede navegar a lo largo de 12 diferentes estados del poema combinatorio.",
-        "description_es": "Interactive object in which the reader can navigate through 12 different states of the combinatorial poem.",
-        "description_en": "Objet interactif dans lequel le lecteur peut naviguer à travers 12 états différents du poème combinatoire.",
-        "description_fr": "",
+        "fecha": "Lima, 2005",
+        "description_es": "Objeto interactivo en que el lector puede navegar a lo largo de 12 diferentes estados del poema combinatorio.",
+        "description_en": "Interactive object in which the reader can navigate through 12 different states of the combinatorial poem.",
+        "description_fr": "Objet interactif dans lequel le lecteur peut naviguer à travers 12 états différents du poème combinatoire.",
         "tags_es": "objeto, poemario",
         "tags_en": "object, collection of poems",
         "tags_fr": "objet, recueil de poèmes",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "5",
         "video": "https://youtu.be/OnkAF9NIS5o?si=oi8ZpbYFFq20RIfZ",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [143.8125, 261.046875]
     },
     {
         "id": "16",
@@ -285,7 +300,8 @@
         "location": "5",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [118.8125, 261.046875]
     },
     {
         "id": "17",
@@ -303,7 +319,8 @@
         "location": "5",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [84.8125, 218.046875]
     },
     {
         "id": "18",
@@ -321,7 +338,8 @@
         "location": "5",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [65.8125, 241.046875]
     },
     {
         "id": "19",
@@ -339,28 +357,11 @@
         "location": "5",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [64.8125, 265.046875]
     },
     {
         "id": "20",
-        "title_es": "(b/p)eso",
-        "title_en": "(b/p)eso",
-        "title_fr": "(b/p)que",
-        "fecha": "",
-        "description_es": "",
-        "description_en": "",
-        "description_fr": "",
-        "tags_es": "",
-        "tags_en": "",
-        "tags_fr": "",
-        "duration": "",
-        "location": "5",
-        "video": "",
-        "game": "",
-        "comments": ""
-    },
-    {
-        "id": "21",
         "title_es": "(b/p)a(b/p)el",
         "title_en": "(b/p)a(b/p)el",
         "title_fr": "(b/p)a(b/p)le",
@@ -375,7 +376,27 @@
         "location": "5",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [64.8125, 304.046875]
+    },
+    {
+        "id": "21",
+        "title_es": "(b/p)eso",
+        "title_en": "(b/p)eso",
+        "title_fr": "(b/p)que",
+        "fecha": "",
+        "description_es": "",
+        "description_en": "",
+        "description_fr": "",
+        "tags_es": "",
+        "tags_en": "",
+        "tags_fr": "",
+        "duration": "",
+        "location": "5",
+        "video": "https://youtu.be/3dwPCDnxWa4?si=zi-yvuia3-n5LjWl",
+        "game": "",
+        "comments": "",
+        "coordenada": [65.8125, 318.046875]
     },
     {
         "id": "22",
@@ -391,9 +412,10 @@
         "tags_fr": "",
         "duration": "",
         "location": "5",
-        "video": "",
+        "video": "https://youtu.be/j-kmLz4GqSM?si=d-p9_YT8nakxF88m",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [117.8125, 288.046875]
     },
     {
         "id": "23",
@@ -411,7 +433,8 @@
         "location": "5",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [144.8125, 289.046875]
     },
     {
         "id": "24",
@@ -427,9 +450,10 @@
         "tags_fr": "",
         "duration": "",
         "location": "5",
-        "video": "",
+        "video": "https://youtu.be/_xwzS14k9C4?si=MHNXd4S4D0gC9SjB",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [75.8125, 332.046875]
     },
     {
         "id": "25",
@@ -445,9 +469,10 @@
         "tags_fr": "",
         "duration": "",
         "location": "5",
-        "video": "",
+        "video": "https://youtu.be/V-UCep5gzTs?si=i8RkwHGi8Rss4hKn",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [105.8125, 332.046875]
     },
     {
         "id": "26",
@@ -465,61 +490,65 @@
         "location": "6",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [224.8125, 309.046875]
     },
     {
         "id": "27",
         "title_es": "partidas",
         "title_en": "breaks",
         "title_fr": "jeux",
-        "fecha": "Obliga al lector a explorar el espacio virtual creado por las cuerdas que dividen a la vez que mantienen pegados cada uno de los versos del poema. La música de cuerdas es auto generativa dependiendo del lugar en que se coloque el cursor. Las frases van encajando a medida que el lector va descubriendo lentamente a navegar por el espacio de manera armónica. La obra obliga a ser vista con cierta melancolía y pausa al ser un texto acerca de las rupturas.",
-        "description_es": "It forces the reader to explore the virtual space created by the strings that divide while keeping each of the verses of the poem stuck together. The string music is self-generating depending on where the cursor is placed. The phrases fit together as the reader slowly discovers how to navigate through the space in a harmonious manner. The work forces one to be seen with a certain melancholy and pause as it is a text about ruptures.",
-        "description_en": "Il oblige le lecteur à explorer l'espace virtuel créé par les cordes qui divisent et maintiennent ensemble chacun des vers du poème. La musique à cordes est auto-générative selon l'endroit où vous placez le curseur. Les phrases s'emboîtent à mesure que le lecteur découvre lentement comment naviguer harmonieusement dans l'espace. L’œuvre oblige à la voir avec une certaine mélancolie et une certaine pause puisqu’il s’agit d’un texte sur les ruptures.",
-        "description_fr": "",
+        "fecha": "Lima, 2001",        
+        "description_es":  "Obliga al lector a explorar el espacio virtual creado por las cuerdas que dividen a la vez que mantienen pegados cada uno de los versos del poema. La música de cuerdas es auto generativa dependiendo del lugar en que se coloque el cursor. Las frases van encajando a medida que el lector va descubriendo lentamente a navegar por el espacio de manera armónica. La obra obliga a ser vista con cierta melancolía y pausa al ser un texto acerca de las rupturas.",
+        "description_en": "It forces the reader to explore the virtual space created by the strings that divide while keeping each of the verses of the poem stuck together. The string music is self-generating depending on where the cursor is placed. The phrases fit together as the reader slowly discovers how to navigate through the space in a harmonious manner. The work forces one to be seen with a certain melancholy and pause as it is a text about ruptures.",
+        "description_fr": "Il oblige le lecteur à explorer l'espace virtuel créé par les cordes qui divisent et maintiennent ensemble chacun des vers du poème. La musique à cordes est auto-générative selon l'endroit où vous placez le curseur. Les phrases s'emboîtent à mesure que le lecteur découvre lentement comment naviguer harmonieusement dans l'espace. L’œuvre oblige à la voir avec une certaine mélancolie et une certaine pause puisqu’il s’agit d’un texte sur les ruptures.",
         "tags_es": "interactivo, flash",
         "tags_en": "interactive, flash",
         "tags_fr": "interactif, flash",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "6",
-        "video": "",
+        "video": "https://youtu.be/sBGatARo8-Y?si=CBFBqWKmsmV7Zhw8",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [190, 260]
     },
     {
         "id": "28",
         "title_es": "ro(s/z)a",
         "title_en": "ro(s/z)a",
         "title_fr": "ro(s/z)a",
-        "fecha": "Navega entre la permutación constante alrededor de tres palabras que solo se diferencian en una letra y cuyos significados varían completamente según los artículos que las unen. Se han dispuesto de forma fantasmal todas las variaciones conocidas de la unión entre estas tres palabras para que el lector explore y descubra los variantes. El poema abre un proceso de escritura normalmente oculto al lector y lo pone a su disposición desmitificándolo.",
-        "description_es": "It navigates between the constant permutation around three words that only differ in one letter and whose meanings vary completely depending on the articles that unite them. All the known variations of the union between these three words have been arranged in a ghostly way so that the reader can explore and discover the variants. The poem opens a writing process normally hidden from the reader and makes it available to them by demystifying it.",
-        "description_en": "Naviguez dans la permutation constante autour de trois mots qui ne diffèrent que d'une seule lettre et dont les significations varient complètement selon les articles qui les unissent. Toutes les variantes connues de l'union entre ces trois mots ont été disposées de manière fantomatique pour que le lecteur puisse explorer et découvrir les variantes. Le poème ouvre un processus d’écriture normalement caché au lecteur et le rend accessible en le démystifiant.",
-        "description_fr": "",
+        "fecha": "Lima, 2007",           
+        "description_es": "Navega entre la permutación constante alrededor de tres palabras que solo se diferencian en una letra y cuyos significados varían completamente según los artículos que las unen. Se han dispuesto de forma fantasmal todas las variaciones conocidas de la unión entre estas tres palabras para que el lector explore y descubra los variantes. El poema abre un proceso de escritura normalmente oculto al lector y lo pone a su disposición desmitificándolo.",
+        "description_en": "It navigates between the constant permutation around three words that only differ in one letter and whose meanings vary completely depending on the articles that unite them. All the known variations of the union between these three words have been arranged in a ghostly way so that the reader can explore and discover the variants. The poem opens a writing process normally hidden from the reader and makes it available to them by demystifying it.",
+        "description_fr": "Naviguez dans la permutation constante autour de trois mots qui ne diffèrent que d'une seule lettre et dont les significations varient complètement selon les articles qui les unissent. Toutes les variantes connues de l'union entre ces trois mots ont été disposées de manière fantomatique pour que le lecteur puisse explorer et découvrir les variantes. Le poème ouvre un processus d’écriture normalement caché au lecteur et le rend accessible en le démystifiant.",
         "tags_es": "interactivo, flash",
         "tags_en": "interactive, flash",
         "tags_fr": "interactif, flash",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "6",
-        "video": "",
+        "video": "https://youtu.be/Od3Q0FRAei0?si=c5J6pqf4mwGI5Vmc",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [200, 240]
     },
     {
         "id": "29",
         "title_es": "grandes esferas celestes",
         "title_en": "large celestial spheres",
         "title_fr": "grandes sphères célestes",
-        "fecha": "Es un ejercicio de permutación que busca dar la sensación de infinito. Las esferas en la parte superior caen al mar de cuadrados rompiendo la tensión superficial de la frase y cambiándola fragmento por fragmento hasta llegar a transformar su sentido por completo. Dos versos expuestos a pequeñas y eternas permutaciones.",
-        "description_es": "It is an exercise in permutation that seeks to give the sensation of infinity. The spheres at the top fall into the sea of ​​squares, breaking the surface tension of the phrase and changing it fragment by fragment until it completely transforms its meaning. Two verses exposed to small and eternal permutations.",
-        "description_en": "C'est un exercice de permutation qui cherche à donner la sensation de l'infini. Les sphères du haut tombent dans la mer de carrés, brisant la tension superficielle de la phrase et la changeant fragment par fragment jusqu'à en transformer complètement son sens. Deux versets exposés à de petites et éternelles permutations.",
-        "description_fr": "",
+        "fecha": "Lima, 2000",           
+        "description_es": "Es un ejercicio de permutación que busca dar la sensación de infinito. Las esferas en la parte superior caen al mar de cuadrados rompiendo la tensión superficial de la frase y cambiándola fragmento por fragmento hasta llegar a transformar su sentido por completo. Dos versos expuestos a pequeñas y eternas permutaciones.",
+        "description_en": "It is an exercise in permutation that seeks to give the sensation of infinity. The spheres at the top fall into the sea of ​​squares, breaking the surface tension of the phrase and changing it fragment by fragment until it completely transforms its meaning. Two verses exposed to small and eternal permutations.",
+        "description_fr": "C'est un exercice de permutation qui cherche à donner la sensation de l'infini. Les sphères du haut tombent dans la mer de carrés, brisant la tension superficielle de la phrase et la changeant fragment par fragment jusqu'à en transformer complètement son sens. Deux versets exposés à de petites et éternelles permutations.",
         "tags_es": "interactivo, flash, combinatorio",
         "tags_en": "interactive, flash, combinatorial",
         "tags_fr": "interactif, flash, combinatoire",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "6",
         "video": "https://youtu.be/69k7V_QJKAU?si=AzQ90mWruXEjTyB0",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [207, 260]
     },
     {
         "id": "30",
@@ -533,11 +562,12 @@
         "tags_es": "interactivo, flash",
         "tags_en": "interactive, flash",
         "tags_fr": "interactif, flash",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "6",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [217, 240]
     },
     {
         "id": "31",
@@ -551,29 +581,31 @@
         "tags_es": "interactivo, flash",
         "tags_en": "interactive, flash",
         "tags_fr": "interactif, flash",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "6",
-        "video": "",
+        "video": "https://youtu.be/uQOE8ZevGOw?si=0P2RQoaP2F4d0SkI",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [227, 260]
     },
     {
         "id": "32",
         "title_es": "conversación",
         "title_en": "conversation",
         "title_fr": "conversation",
-        "fecha": "Es una exploración en el uso del lenguaje común y corriente como un puente entre las personas. Estas palabras cotidianas son despojadas de su significado real y pasan a ser meras líneas de tejido conectivo entre los seres humanos. Las palabras son solo visibles luego de la interacción con la pieza al desencajar uno de los entes emisores, representados por círculos. Estos entes al ser extirpados de su orden despiertan, tensan los conductos lingüísticos en una lucha por mantener el orden original de las cosas. Lo cotidiano quiere permanecer inmóvil y su arma más fuerte para permanecer en su sitio es el lenguaje vacío y carente de potencia simbólica.",
-        "description_es": "It is an exploration of the use of common and ordinary language as a bridge between people. These everyday words are stripped of their real meaning and become mere lines of connective tissue between human beings. The words are only visible after the interaction with the piece when one of the emitting entities, represented by circles, is dislodged. These entities, when removed from their order, awaken, tightening the linguistic conduits in a struggle to maintain the original order of things. The everyday wants to remain motionless and its strongest weapon to remain in its place is empty language lacking symbolic power.",
-        "description_en": "Il s'agit d'une exploration de l'utilisation du langage quotidien comme pont entre les gens. Ces mots du quotidien sont dépouillés de leur véritable sens et deviennent de simples lignes de tissu conjonctif entre les êtres humains. Les mots ne sont visibles qu'après avoir interagi avec la pièce en désengageant l'une des entités émettrices, représentées par des cercles. Lorsque ces entités sont retirées de leur ordre, elles réveillent et tendent les canaux linguistiques dans une lutte pour maintenir l’ordre originel des choses. Le quotidien veut rester immobile et son arme la plus puissante pour rester à sa place est un langage vide et dépourvu de pouvoir symbolique.",
-        "description_fr": "",
+        "fecha": "Lima, 2004",            
+        "description_es": "Es una exploración en el uso del lenguaje común y corriente como un puente entre las personas. Estas palabras cotidianas son despojadas de su significado real y pasan a ser meras líneas de tejido conectivo entre los seres humanos. Las palabras son solo visibles luego de la interacción con la pieza al desencajar uno de los entes emisores, representados por círculos. Estos entes al ser extirpados de su orden despiertan, tensan los conductos lingüísticos en una lucha por mantener el orden original de las cosas. Lo cotidiano quiere permanecer inmóvil y su arma más fuerte para permanecer en su sitio es el lenguaje vacío y carente de potencia simbólica.",
+        "description_en": "It is an exploration of the use of common and ordinary language as a bridge between people. These everyday words are stripped of their real meaning and become mere lines of connective tissue between human beings. The words are only visible after the interaction with the piece when one of the emitting entities, represented by circles, is dislodged. These entities, when removed from their order, awaken, tightening the linguistic conduits in a struggle to maintain the original order of things. The everyday wants to remain motionless and its strongest weapon to remain in its place is empty language lacking symbolic power.",
+        "description_fr": "Il s'agit d'une exploration de l'utilisation du langage quotidien comme pont entre les gens. Ces mots du quotidien sont dépouillés de leur véritable sens et deviennent de simples lignes de tissu conjonctif entre les êtres humains. Les mots ne sont visibles qu'après avoir interagi avec la pièce en désengageant l'une des entités émettrices, représentées par des cercles. Lorsque ces entités sont retirées de leur ordre, elles réveillent et tendent les canaux linguistiques dans une lutte pour maintenir l’ordre originel des choses. Le quotidien veut rester immobile et son arme la plus puissante pour rester à sa place est un langage vide et dépourvu de pouvoir symbolique.",
         "tags_es": "circular, VR",
         "tags_en": "circular, virtual reality",
         "tags_fr": "circulaire, réalité virtuelle",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "6",
         "video": "https://youtu.be/bKCCdaYursc?si=ra3lpkItXnp0N-Vk",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [237, 240]
     },
     {
         "id": "33",
@@ -587,10 +619,11 @@
         "tags_es": "",
         "tags_en": "",
         "tags_fr": "",
-        "duration": "02:00:00",
+        "duration": "00:02:00",
         "location": "7",
         "video": "",
         "game": "",
-        "comments": ""
+        "comments": "",
+        "coordenada": [296.8125, 309.046875]
     }
 ]
