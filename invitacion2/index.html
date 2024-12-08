@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AR Marker Test</title>
+  <!-- Carga A-Frame -->
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <!-- Carga AR.js (versión estable 1.7.2) -->
+  <script src="https://cdn.jsdelivr.net/npm/ar.js@1.7.2/aframe/build/aframe-ar.min.js"></script>
+  <style>
+    body {
+      margin: 0; 
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <a-scene embedded arjs="sourceType: webcam;">
+    <!-- Usamos un marcador predefinido "hiro" -->
+    <a-marker preset="hiro">
+      <!-- Una caja roja básica para verificar detección -->
+      <a-box position="0 0.5 0" material="color: red;"></a-box>
+    </a-marker>
+
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
