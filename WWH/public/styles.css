@@ -61,7 +61,6 @@ footer {
 footer img.footer-logo {
     height: 80px;
 }
-
 /* Language Links */
 .language-options a {
     text-decoration: none;
@@ -87,7 +86,6 @@ footer img.footer-logo {
     text-decoration: none;
     cursor: default;
 }
-
 /* Welcome Section */
 .welcome-content {
     display: flex;
@@ -283,6 +281,8 @@ footer img.footer-logo {
 .pieces a:visited {
     color: #a0a0a0;
 }
+
+
 /* Map Section */
 .map {
     display: flex;
